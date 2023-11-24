@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://i.pinimg.com/originals/aa/55/92/aa55925321d8fd1aefba890d0952c2b9.jpg"); /* Ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la página */
+    background-position: center; /* Centra la imagen en la página */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    font-family: Arial, sans-serif; /* Establece la fuente del texto */
+    color: #fff; /* Color del texto en caso de que la imagen sea oscura */
+}
+
+/* Estilos del menu de navegacion */
+.barradenavegacion2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; /* Agregado para mayor espacio interno */
+}
+
+.barradenavegacion2 ion-icon {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.barradenavegacion2 h3 {
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 35%;
+    margin: 0;
+    padding: 0;
+}
+.barradenavegacion2 h2 {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.controls-row {
+    position: absolute;
+    bottom: 10rem;
+    left:2rem;
+    right:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white; /* Color blanco para los iconos */
+}
+
+.controls-row ion-icon {
+    font-size: 2rem;
+}
+
+
+/* Estilos adicionales para otros iconos */
+.controls-row ion-icon:not(.play-icon) {
+    font-size: 2rem;
+}
+
+.titulo {
+    text-align: justify;
+    display: flex;
+    padding: 3.5rem;
+    margin-top: 12rem;
+}
+.titulo h3 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.titulo h2 {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+
+  
+  
+  
+  /* Estilos de las cartas de portada de álbumes */
+  .album-card2 {
+      width: 25rem;
+      height: 25rem; /* Tamaño cuadrado en rem */
+      overflow: hidden;
+      box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+    }
+    
+    .album-card2 ion-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ajusta el tamaño y la posición de la imagen */
+    }
+    /* Estilos para la barra de progreso del tiempo de reproducción */
+.progress-bar {
+    margin-top: 39rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: baseline;
+}
+
+/* Estilos para la fila de tiempo */
+.time-row {
+    margin-left: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: baseline;
+    
+}

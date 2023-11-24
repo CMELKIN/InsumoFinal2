@@ -1,0 +1,74 @@
+<body>
+  <ion-header class="barradenavegacion2">
+    <!-- Icono de menu-->
+    <ion-icon name="chevron-back-sharp" (click)="goback()"></ion-icon>
+
+      
+    <!-- discover -->
+    <ion-title>
+      <h3>REPRODUCIENDO DESDE PLAYLIST</h3>
+      <h2>"RECOMENDADO PARA TI"</h2>
+    </ion-title>
+
+    <!-- Icono de elipses -->
+    <ion-label>
+      <ion-icon name="ellipsis-vertical"></ion-icon>
+    </ion-label>
+      
+</ion-header>
+
+
+<ion-label>
+
+
+    <ion-card class="album-card2">
+      <ion-img src="https://lc.cx/5dEIwm"></ion-img>
+    </ion-card>
+    
+  <!-- Controles de reproducción -->
+  <ion-row class="controls-row">
+    <ion-col size="1">
+      <!-- Icono de aleatorio -->
+      <ion-icon name="shuffle"></ion-icon>
+    </ion-col>
+
+    <ion-col size="1" (click)="goBack2()">
+      <ion-icon name="play-skip-back-sharp"></ion-icon>
+    </ion-col>
+
+
+    <ion-col size="1" (click)="togglePlay()">
+      <ion-icon [name]="isPlaying ? 'pause' : 'play'"></ion-icon>
+    </ion-col>
+  
+    <ion-col size="1">
+      <!-- Icono de siguiente -->
+      <ion-icon name="play-skip-forward-sharp"></ion-icon>
+    </ion-col>
+
+    <ion-col size="1">
+      <!-- Icono de me gusta -->
+      <ion-icon name="heart"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+  <!-- Nombre de la canción -->
+    <ion-title class="titulo">
+      <h3>Gently</h3>
+      <h2>Drake FT Bad Bunny</h2>
+    </ion-title>
+</ion-label>
+
+ <!-- Barra de progreso del tiempo de reproducción -->
+ <ion-range class="progress-bar" [(ngModel)]="progress"></ion-range>
+
+      <!-- Tiempo transcurrido y tiempo total de la canción -->
+      <ion-row class="time-row">
+        <ion-col size="3">{{ currentTime }}</ion-col>
+        <ion-col size="6"></ion-col>
+        <ion-col size="3">{{ totalTime }}</ion-col>
+      </ion-row>
+
+
+
+</body>

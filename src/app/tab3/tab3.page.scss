@@ -1,0 +1,113 @@
+/* Estilos del menu de navegacion */
+.barradenavegacion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; /* Agregado para mayor espacio interno */
+}
+
+.barradenavegacion ion-icon {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+
+
+
+
+/* Estilos barra de búsqueda*/
+.Barradebsuqueda {
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna */
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.Barradebsuqueda h1 {
+    font-size: 1.5rem; /* Ajusta el tamaño de la letra según sea necesario */
+    font-weight: bold; /* Hace que la letra sea negrita */
+    margin: 0;
+    margin-left: 2rem;
+    margin-bottom: 1rem; /* Añade un margen inferior para separar el mensaje de la barra de búsqueda */
+}
+
+ion-searchbar {
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    align-items: center;
+}
+
+
+
+
+/* Agregado: Estilos para el contenedor de las cartas */
+.album-cards-container {
+  display: flex;
+  justify-content: space-around; /* Puedes ajustar según prefieras: space-between, space-around, etc. */
+  flex-wrap: wrap; /* Permite que las cartas se envuelvan a la siguiente línea si no hay espacio suficiente */
+}
+
+
+
+/* Estilos de las cartas de portada de álbumes */
+.album-card {
+    width: 11rem; /* Tamaño cuadrado en rem */
+    height: 11rem; /* Tamaño cuadrado en rem */
+    margin: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .album-card ion-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño y la posición de la imagen */
+  }
+  
+  .album-card ion-icon {
+    font-size: 3rem; /* Tamaño del icono en rem */
+    color: #fff; /* Color del icono de reproducción */
+    position: absolute;
+  }
+  
+  .album-card:hover {
+    transform: scale(1.10);
+}
+  
+  
+
+
+/* Estilos de las canciones */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ion-thumbnail {
+    width: 75px;
+    height: 75px;
+}
+
+ion-item {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+ion-item:hover {
+    transform: scale(1.10);
+}
+
+
